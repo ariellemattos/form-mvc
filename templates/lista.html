@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <table>
+         <thead>
+            <td>email</td>
+            <td>nome</td>
+            <td>senha</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["email"]}}</td>
+               <td>{{row["nome"]}}</td>
+               <td> {{ row["senha"]}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Voltar</a>
+      
+   </body>
+</html>
